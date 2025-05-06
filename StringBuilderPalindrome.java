@@ -6,10 +6,9 @@ public static void main(String[] args) {
     Scanner wordInput = new Scanner(System.in);
     System.out.print("Enter a Word:");
     String wordStringChecker =wordInput.nextLine();
-    String wordStringRev = "";
-    for(int i = wordStringChecker.length()-1; i >=0; i--){
-        wordStringRev+= wordStringChecker.charAt(i);
-    }
+    StringBuilder sb = new StringBuilder(wordStringChecker);
+    String wordStringRev = sb.reverse().toString();
+
     if(wordStringChecker.equalsIgnoreCase(wordStringRev)){
         System.out.println(wordStringChecker +" is a palindrome.");
         }else{
