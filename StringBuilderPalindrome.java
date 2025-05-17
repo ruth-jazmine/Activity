@@ -9,7 +9,7 @@ public static void main(String[] args) {
     StringBuilder sb = new StringBuilder(wordStringChecker);
     String wordStringRev = sb.reverse().toString();
 
-    if(wordStringChecker.equalsI(wordStringRev)){
+    if(wordStringChecker.equals(wordStringRev)){
         System.out.println(wordStringChecker +" : The input string is a palindrome.");
         }else{
             System.out.println(wordStringChecker + "The input string is not a palindrome.");
