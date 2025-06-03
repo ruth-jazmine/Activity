@@ -1,4 +1,4 @@
-import static java.lang.Math.*; // Static import for Math methods
+import static java.lang.Math.*;
 import java.util.Scanner;
 
 public class Task9 {
@@ -35,7 +35,7 @@ public class Task9 {
         System.out.println("Multiplication: " + multiply(a, b));
         System.out.println("Division: " + divide(a, b));
     } finally {
-        scanner.close(); // Ensure the scanner is closed even if an exception occurs
+        scanner.close();
     }
 }
 
