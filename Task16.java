@@ -3,9 +3,7 @@ interface Animal {
     void groom();
     void pet();
 }
-
 class Gorilla implements Animal {
-
     @Override
     public boolean feed(boolean timeToEat) {
         if (timeToEat) {
@@ -17,13 +15,11 @@ class Gorilla implements Animal {
             return false;
         }
     }
-
     @Override
     public void groom() {
         // lather, rinse, repeat
         System.out.println("Gorilla Grooming Time.");
     }
-
     @Override
     public void pet() {
         // pet at your own risk
