@@ -1,5 +1,5 @@
 interface Animal {
-    boolean feed(boolean feedGorilla);
+    boolean feed(boolean timeToEat);
     void groom();
     void pet();
 }
@@ -7,8 +7,8 @@ interface Animal {
 class Gorilla implements Animal {
 
     @Override
-    public boolean feed(boolean feedGorilla) {
-        if (feedGorilla) {
+    public boolean feed(boolean timeToEat) {
+        if (timeToEat) {
             // put gorilla food into cage
             System.out.println("Gorilla Feeding Time.");
             return true;
