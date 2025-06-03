@@ -20,8 +20,9 @@ public class Task9 {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in);
 
+    try {
         System.out.print("1st number: ");
         int a = scanner.nextInt();
 
@@ -33,5 +34,9 @@ public class Task9 {
         System.out.println("Subtraction: " + subtract(a, b));
         System.out.println("Multiplication: " + multiply(a, b));
         System.out.println("Division: " + divide(a, b));
+    } finally {
+        scanner.close(); // Ensure the scanner is closed even if an exception occurs
     }
+}
+
 }
